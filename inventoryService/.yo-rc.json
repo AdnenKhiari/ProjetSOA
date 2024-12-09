@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 3,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "inventoryService",
+    "buildTool": "gradle",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableSwaggerCodegen": true,
+    "entities": ["Inventory"],
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "NGU5Yzg4OGVhNTk2NzQ2ZDI2ZDdmMDM1MGM2MWZlZjlhMjBiY2FhNmYzZjhmYzIyMmU1YTkwNjkzNTFjODA2MWJkOTYzMTBmOTQ4NmI2YjkxMzI4YTk4N2RmYzkyNDBmOTExMWRkYzlkNmQ0NzBkYTY2OTgzYWE5NzkyZWY5ZjI=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1733162343000,
+    "nativeLanguage": "en",
+    "packageName": "com.example.inventory",
+    "prodDatabaseType": "postgresql",
+    "serverPort": 8083,
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

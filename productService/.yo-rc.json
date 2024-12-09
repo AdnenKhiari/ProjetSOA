@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 1,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "productService",
+    "buildTool": "gradle",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableSwaggerCodegen": true,
+    "entities": ["Product"],
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "ZGUyYTQ3MDc4MmEwMDBlMGI4ZTcwYTNjYTBlOTA3YWMyZDNkZTJiMTYwYmI5MzRmNGZmOWJhZjAxZjUwNzEyMmFlYzIyOTkwZTBjZDVkYmE5NGUxYTc3YWZhMGFhNjRjNGZhODcxYTJiMjI4MDNkODA1OGQxYzc0NjQ1NDYxZmQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1733162343000,
+    "nativeLanguage": "en",
+    "packageName": "com.example.product",
+    "prodDatabaseType": "mongodb",
+    "serverPort": 8081,
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

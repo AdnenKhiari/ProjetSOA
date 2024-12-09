@@ -1,0 +1,145 @@
+application {
+  config {
+    baseName orderService
+    applicationType microservice
+    packageName com.example.order
+    buildTool gradle
+    databaseType sql
+    devDatabaseType postgresql
+    prodDatabaseType postgresql
+    skipClient true
+    skipUserManagement true
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    serviceDiscoveryType consul
+  }
+  entities Order
+}
+
+application {
+  config {
+    baseName productService
+    applicationType microservice
+    packageName com.example.product
+    buildTool gradle
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    skipClient true
+    skipUserManagement true
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    serviceDiscoveryType consul
+  }
+  entities Product
+}
+
+application {
+  config {
+    baseName paymentService
+    applicationType microservice
+    packageName com.example.payment
+    buildTool gradle
+    databaseType sql
+    devDatabaseType postgresql
+    prodDatabaseType postgresql
+    skipClient true
+    skipUserManagement true
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    serviceDiscoveryType consul
+  }
+  entities Payment
+}
+
+application {
+  config {
+    baseName inventoryService
+    applicationType microservice
+    packageName com.example.inventory
+    buildTool gradle
+    databaseType sql
+    devDatabaseType postgresql
+    prodDatabaseType postgresql
+    skipClient true
+    skipUserManagement true
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    serviceDiscoveryType consul
+  }
+  entities Inventory
+}
+
+application {
+  config {
+    baseName notificationService
+    applicationType microservice
+    packageName com.example.notification
+    buildTool gradle
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    skipClient true
+    skipUserManagement true
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    serviceDiscoveryType consul
+  }
+  entities Notification
+}
+
+entity Order {
+  id Long required
+  customerId Long required
+  status String required
+  totalAmount BigDecimal required
+  createdAt Instant required
+  updatedAt Instant
+}
+
+entity Product {
+  id String required
+  name String required
+  description String
+  price BigDecimal required
+  stock Integer required
+  createdAt Instant required
+  updatedAt Instant
+}
+
+entity Payment {
+  id Long required
+  orderId Long required
+  paymentStatus String required
+  paymentMethod String required
+  amount BigDecimal required
+  processedAt Instant required
+}
+
+entity Inventory {
+  id Long required
+  productId Long required
+  quantity Integer required
+  updatedAt Instant required
+}
+
+entity Notification {
+  id String required
+  orderId Long required
+  customerId Long required
+  type String required
+  status String required
+  sentAt Instant
+}
+
+microservice Order with orderService
+microservice Product with productService
+microservice Payment with paymentService
+microservice Inventory with inventoryService
+microservice Notification with notificationService
+
+paginate Order, Product, Payment, Inventory, Notification with pagination
+
+service Order, Product, Payment, Inventory, Notification with serviceClass
+
+dto Order, Product, Payment, Inventory, Notification with mapstruct

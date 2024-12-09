@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 2,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "paymentService",
+    "buildTool": "gradle",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableSwaggerCodegen": true,
+    "entities": ["Payment"],
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "NmU1NjNkYTZlNDUzMzM3MjBiMGE4MjM1MjNlNzVlMDU0ZjJmZTM0MGQ3YWZjOGU2OWJlYmMwMzY5MmRlZGQzYjFlZDhmN2QyMDkzZGI2NzgxMmZkNDQ2YTQ3MTNiMWJmNGVkZTc1NmVmMWYwZWFmYTMzYjgyMzliMWM0MWJmNGM=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1733162343000,
+    "nativeLanguage": "en",
+    "packageName": "com.example.payment",
+    "prodDatabaseType": "postgresql",
+    "serverPort": 8082,
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

@@ -1,0 +1,14 @@
+application {
+  config {
+    baseName gateway
+    applicationType gateway
+    packageName com.example.gateway
+    buildTool gradle
+    databaseType no
+    skipClient true
+    skipServer false
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    serviceDiscoveryType consul
+  }
+}

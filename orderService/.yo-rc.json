@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "orderService",
+    "buildTool": "gradle",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableSwaggerCodegen": true,
+    "entities": ["Order"],
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "MDJiZTg3MTkyNWRiNzc1MDJkMzBlY2QwMmIyYjQ3NWMzNDg3YjBhNGRlODM3MWZiMDQxNmY2ZmZiOTdiMTIwYWU3YzMxMDU5MmMxY2M0ZjM4MTBhZDljNGIwZTRhMjg2MjFmMTcwYjk1OTM1ZjU3OWY5ZjMxZGVjYjU1OTdjNWE=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1733162343000,
+    "nativeLanguage": "en",
+    "packageName": "com.example.order",
+    "prodDatabaseType": "postgresql",
+    "serverPort": 8080,
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 4,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "notificationService",
+    "buildTool": "gradle",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableSwaggerCodegen": true,
+    "entities": ["Notification"],
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "OWJjNDhlMGRkZTViZDY3YWZjZjZkZDZlYzM1MmU0ZWRmNTFkM2I2MmM4MDNhNjY0ZjcyZWE3NDZlNjZhZDIyMDU5YjlkMTc3NWU4MTYyOGQxNWMyY2U1ZmU5YmYyMDg5MThlNTRhMDcwOGZlNTkzMGIzZmQ2ZDE1NjFiMzBmYTI=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1733162343000,
+    "nativeLanguage": "en",
+    "packageName": "com.example.notification",
+    "prodDatabaseType": "mongodb",
+    "serverPort": 8084,
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

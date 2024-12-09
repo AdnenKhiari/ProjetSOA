@@ -1,0 +1,22 @@
+{
+  "generator-jhipster": {
+    "applicationType": "gateway",
+    "authenticationType": "oauth2",
+    "baseName": "gateway",
+    "buildTool": "gradle",
+    "creationTimestamp": 1733160544174,
+    "databaseType": "no",
+    "enableSwaggerCodegen": true,
+    "entities": [],
+    "jhipsterVersion": "8.7.3",
+    "jwtSecretKey": "NTM2MDFkNjZiMDRlYWUzZDY3MmY2OTJiNGJkZWU0MzE1YTI2YWUyZTM4MjIxNGU1YThjODNkN2U5MDRmMGVlNWE2MWFiMjg2NTgxMzE0ZjVkNDlmZjdlODg1Y2M4NmE0ZmI3MzM4ZmQ0ZmZkZTUyZDQyOGIxODY5Yjc0NDg1NTE=",
+    "languages": ["en"],
+    "nativeLanguage": "en",
+    "packageName": "com.example.gateway",
+    "reactive": true,
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipServer": false,
+    "skipUserManagement": true
+  }
+}
